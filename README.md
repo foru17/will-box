@@ -1,4 +1,4 @@
-愿望盒子 will-box
+will-box 愿望盒子 
 ========
 - Theme Name: Will-Box-One 愿望盒子
 - Theme URI: http://this.is26.com
