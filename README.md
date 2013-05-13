@@ -33,3 +33,5 @@ bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 - 后台设置meta keywords和description（不用自己硬改源代码了）
 
 - 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分（还需优化）,其他大家可以自己看function文件。
+
+- 更多的问题，请直接访问我的博客
