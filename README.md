@@ -1,6 +1,6 @@
-will-box
+愿望盒子 will-box
 ========
-- Theme Name: Will-Box-One
+- Theme Name: Will-Box-One 愿望盒子
 - Theme URI: http://this.is26.com
 - Description: 罗磊的独立博客定制主题 基于bones,html5,normailize,LESS等相关关键字模板or技术
 - Author: @罗罗磊磊
