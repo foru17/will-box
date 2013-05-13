@@ -1,0 +1,1484 @@
+/******************************************************************
+Site Name: 三石主题
+Author:@罗罗磊磊
+
+Stylesheet: Base Mobile Stylesheet
+******************************************************************/
+
+/*********************
+01. GENERAL STYLES
+*********************/
+
+
+html, body {
+	/* height: 100%; */
+}
+body {
+	font-family: @serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #565656;
+	background-image: url("@{imagePath}/bg.gif");
+	background-color: #fff;
+}
+
+/********************
+02. WORDPRESS BODY CLASSES
+    style a page via class
+********************/
+
+.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
+.home {}                          /* home page */
+.blog {}                          /* blog template page */
+.archive {}                       /* archive page */
+.date {}                          /* date archive page */
+	.date-paged-1 {}                /* replace the number to the corresponding page number */
+.search {}                        /* search page */
+	.search-results {}              /* search result page */
+	.search-no-results {}           /* no results search page */
+	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
+.error404 {}                      /* 404 page */
+.single {}                        /* single post page */
+	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
+.attachment {}                    /* attatchment page */
+	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type {}        /* style mime type pages */
+.author {}                        /* author page */
+	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}                      /* category page */
+	.category-1 {}                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 {}            /* replace the number to the corresponding page number */
+.tag {}                           /* tag page */
+	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
+.page-template {}                 /* custom page template page */
+	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 {}                /* replace the number to the corresponding page number */
+	.page-parent {}                 /* parent page template */
+	.page-child {}                  /* child page template */
+	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+
+
+/*********************
+Wordpress Index Page Styles
+*********************/
+
+.home-posts-list{
+	#main{
+		.post-in-list{
+			margin: 10px;
+			background: #fff;		
+			word-wrap:break-word;
+			float: left;
+			.blog-entry-thumbnail{
+				img{
+					max-width: 100%;
+					box-shadow: #000 0em 0em 0em;
+				}
+				img:hover{
+					opacity: 0.6;
+				}
+			}
+			.blog-entry-text{
+				padding: 20px;
+				.entry-header{
+					.h2{
+						margin: 0 0 12px;
+						font-size: 1.143em;
+						a{
+							color: #0a0a0a;
+							font-weight: 500;
+							line-height: 1.3em;
+							&:hover{
+								color: #7F8C8D;
+							}
+						}
+					
+					}
+				}
+			.entry-meta{
+				border-top: 1px solid #eee;
+				.icon-font{
+					opacity: 0.5;
+					font-size: 0.5em;
+					padding-right: 0.3em;
+				}
+				.home-box-cat-tag{
+					margin-top: -0.8em;
+					.post-categories{
+					a{
+					background: #e74c3c;
+					display: block;
+					float: left;
+					margin-right: 5px;
+					margin-bottom: 5px;
+					border-radius: 2px;
+					color: #fff;
+					font-size: 0.715em;
+					padding: 2px 6px;
+					}
+					a:hover{
+						background: #2C3E50;
+					}
+					}
+				}
+			}
+			}
+		}
+				.masonry-brick{
+
+					.border-radius(4px);
+					.boxShadow(0,1px,5px,0,rgba(0,0,0,0.2));
+					margin-top: 20px;
+					img{
+						.border-radius(4px 4px 0 0);
+					}
+				}
+				.masonry-brick:hover{
+					.boxShadow(0,2px,7px,0,rgba(0,0,0,0.4));
+				}
+	}
+}
+
+
+/*********************
+03. LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 64em;
+	margin: 0 auto;
+}
+
+
+#container {
+	max-width: 64em;
+	margin: 80px auto;
+	
+}
+.fixed{
+width: 100%;
+left: 0;
+position: fixed;
+top: 0;
+z-index: 99;
+}
+
+
+
+
+/*********************
+04. LINK STYLES
+*********************/
+
+a, a:visited {
+	color: @link-color;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: @link-hover;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+05. H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: @sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: 400;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+li{
+	list-style: none;
+	text-decoration: none;
+}
+
+/*********************
+06. HEADER SYTLES
+*********************/
+
+
+.header {
+
+	.top-bar{
+		background: #fff;
+		background: rgba(255,255,255,0.95);
+		top: 0;
+		left: 0;
+		height: 70px;
+		line-height: 70px;
+		z-index: 1000;
+		border-bottom: 1px solid #ddd;
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+		.top-inner{
+			max-width: 64em;
+			margin: 0 auto;
+			#nav{
+				float: right;
+				padding: 0;
+				margin: 0;
+				.current-cat {  }
+				li{
+					float: left;
+					margin-left: 10px;
+					display: inline;
+					position: relative;
+
+					a{
+						display: block;
+						color: #666;
+						margin: 0px 5px;
+						font-size: 1em;
+
+					}
+					ul{
+						position: absolute;
+						background: rgba(255,255,255,.9);
+						left: 0;
+						top: 40px;
+						width: 100px;
+						display: none;
+						box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+						border-radius: 3px;
+						-moz-border-radius: 3px;
+						li{
+							 clear: both;
+							 line-height: 32px;
+							 a{
+							 	float: left;
+							 	&:hover{
+							 		color: rgba(0,0,0,.5);
+							 	}
+							 }
+							 &:hover{
+
+							 }				
+						}
+					}
+				}
+			}
+		#top-logo{
+			.logo-small{
+			margin-top: 10px;
+			margin-left: 8px;
+			height: 45px;
+			width: 160px;
+			float: left;
+			text-indent: -9999px;
+			background: url('@{imagePath}/sprites.png') 0 -0px no-repeat;
+				&:hover{
+					background: url('@{imagePath}/sprites.png') 0 -47px no-repeat;
+				}
+			}
+		}
+	}
+		li{
+			float: left;
+			a{
+
+				&:hover{
+					color: #efefef;
+				}
+			}
+
+		}
+		.search-header{
+			float: right;
+			input{
+					background: url('@{imagePath}/sprites.png')  no-repeat  -176px -58px #fcfcfc;
+					border: 1px solid #d1d1d1;
+				    font: bold 12px Arial,Helvetica,Sans-serif;
+				    color: #bebebe;
+				    width: 30px;
+				    padding: 6px 15px 6px 28px;
+				    -webkit-border-radius: 20px;
+				    -moz-border-radius: 20px;
+				    border-radius: 20px;
+				    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+				    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+				    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+				    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+				    -webkit-transition: all 0.7s ease 0s;
+				    -moz-transition: all 0.7s ease 0s;
+				    -o-transition: all 0.7s ease 0s;
+				    transition: all 0.7s ease 0s;
+				    -webkit-appearance: textfield;
+				&:focus{
+					width: 200px;
+				}
+			
+		}
+	}
+}
+
+	#inner-header {}
+
+	#banner-info {
+		display: none;
+		text-align: center;
+		background: #fff;
+		a{
+			padding: 20px;
+			margin-bottom: 30px;
+			font-weight: 100;
+			font-size: 0.7em;
+			color: rgba(0,0,0,0.5);
+			&:hover{
+				color:rgba(0,0,0,0.4);
+			}
+		}
+	}
+
+	nav {
+		ul.nav {
+			li {
+				
+				a {}
+
+				&:first-child {}
+
+				&:last-child {}
+			}
+		}
+	}
+}
+
+
+.menu-button{
+display: none;
+}
+.touch-button{
+display: none;
+}
+
+#searchform{
+	display: none;
+}
+
+/*********************
+07. NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.nav {
+	border: 1px solid #ccc;
+	border-bottom: 0;
+
+	li {
+
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 10px 10px;
+			
+			border-bottom: 1px solid #ccc;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	width: 100%;
+	margin: 0.1em auto;
+	margin-bottom: 1em;
+	#inner-content {}
+	#single-inner-content{
+
+		background: #fff;
+		word-wrap:break-word; 
+		.article-header{
+			text-align: center;
+			clear: both;
+			.single-title{
+				font-size: 1.4em;
+			}
+			.artile-meta{
+				text-align: center;
+				border-radius: 3px;
+				.boxShadow(0,1px,4px,0,rgba(0, 0, 0, 0.2));
+				padding: 10px;
+				margin: 0 auto 40px auto;
+				max-width: 100%;
+				li{
+					display: inline-block;
+					margin-right: 1em;
+					padding-left: 1em;
+					a{
+						color: #565656;
+					}
+				}
+			}
+		}
+		#main{
+			width: 80%;
+			margin: 0 auto;
+			border-bottom: 1px solid #eee;
+			line-height: 1.55em;
+			font-size: 1.2em;
+			overflow: hidden;
+			p{
+				line-height: 1.55em;
+				margin: 1em 0;
+				font-family: georgia, times, serif;
+			}
+
+		}
+		footer{
+			border-bottom: 1px solid #eee;
+			.tags{
+				padding: 10px;
+				border-bottom: : 1px solid #eee;
+				a{
+					border-radius: 4px;
+					background: #1abc9c;
+					color: white;
+					cursor: pointer;
+					margin-right: 5px;
+					margin-bottom: 5px;
+					overflow: hidden;
+					padding: 6px 13px 6px 19px;
+					position: relative;
+					vertical-align: middle;
+					display: inline-block;
+					zoom: 1;
+					&:hover{
+						background: #2ECC71;
+					}
+				}
+
+
+			}
+		}
+		img{
+			width: auto;
+			max-width: 100%;
+		}
+		.author-info-box{
+			width: 100%;
+			height: 160px;
+			padding: 10px 20px;
+			border: 1px dashed #eee;
+			img{
+				display: block;
+				height: 90px;
+				width: 90px;
+				float: left;
+				margin-top: 20px;
+				.border-radius(50%;); 
+
+			}	
+			.author-info{
+				float: left;
+				margin-left: 20px;
+				border: 1px dashed #eee;
+				li{
+					float: left;
+				}
+				.author-title{
+					font-size: 0.8em;
+					color: #0f0f0f;
+				}
+				
+			}	
+		}
+	}
+
+	#post-nav{
+		
+		border: 1px solid #eee;
+		clear: both;
+		height: 200px;
+		padding: 10px;
+		.post-nav-box{
+			float: left;
+			time{
+				font-size: 12px;
+				display: block;
+				text-align: center;
+			}
+			h4{	
+				display: inline-block;
+				text-align: center;
+				font-size: 14px;
+			}
+			a.next,a.previous{
+				display: block;
+				text-align: center;
+				border-bottom: 1px dashed #eee;
+			}
+		}
+		img{
+
+
+		}
+		.post-previous{
+			display: block;
+			width: 45%;
+			float: left;
+			img{
+				float: left;
+			}
+
+		}
+		.post-next{
+			display: block;
+			width: 45%;
+			float: right;
+			img{
+				float: right;
+			}
+		}
+	}
+}
+
+		.hentry {
+
+			header {}
+
+			footer {}
+
+		} /* end .hentry */
+
+		.single-title,
+		.page-title {}
+
+		.single-title {}
+
+		.page-title {}
+
+		.archive-title { }
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.byline {
+			color: #999;
+
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+					
+					font-family: georgia, times, serif;
+			p {
+
+			}
+
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+
+				li {}
+
+			}
+
+			ul {
+
+				li {}
+
+			}
+
+			ol {
+
+				li {}
+
+			}
+
+			blockquote {
+					margin: 1em 0;
+					padding: 1em 2em;
+					border: 1px solid rgba(0,0,0,.1);
+					border-left: 8px solid #efefef;
+					background-color: #f8f8f8;
+					font: italic 1.05em/1.55em "Skolar Italic","Times New Roman",serif;
+					color: rgba(0,0,0,.75);
+				&:before {}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			video, object {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: #eee;
+				border: 1px solid #cecece;
+				padding: 10px;
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.gallery {
+
+			dl {
+
+				a {}
+
+				img {}
+
+			}
+
+			dt {}
+
+			dd {}
+
+		} /* end .gallery */
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+/******************************************************************
+09. PAGE NAVI STYLES
+******************************************************************/
+
+#page-nav{
+
+	a{
+		
+	}
+	a:hover,.page_navi a.current{
+		
+	}
+}
+
+
+
+.page-navigation,
+.wp-prev-next{
+		text-align: center;
+}
+	.bones_page_navi {
+
+		display: inline-block;
+		li {
+			float: left;
+			margin-left: 10px;
+			display: inline;
+			a {
+				color:#707070; 
+			    background:#FFFFFF; 
+			 	display: inline-block;
+			 	border-radius:3px; 
+			    -moz-border-radius:3px; 
+			    -webkit-border-radius:3px; 
+			    border:solid 1px #DCDCDC; 
+			    padding:6px 9px 6px 9px; 
+				&:hover,
+				&:focus {
+					background: #E74C3C;
+					color:#fff; 
+				}
+			}
+		&:hover{
+			
+		}
+		}
+
+		/* current page link */
+		li.bpn-current {
+				color:#fff; 
+			    background:#E74C3C; 
+			 	display: inline-block;
+			 	border-radius:3px; 
+			    -moz-border-radius:3px; 
+			    -webkit-border-radius:3px; 
+			    border:solid 1px #DCDCDC; 
+			    padding:6px 9px 6px 9px; 
+
+			a {  
+				background: #efefef;
+				/* hovering on current page link */
+				&:hover,
+				&:focus {
+					
+				}
+
+			}
+
+		} /* end .bones_page_navi .bpn-current */
+
+		/* common styles for page-navi links */
+		li.bpn-prev-link,
+		li.bpn-next-link {
+			font-weight: 700;
+
+			a {
+		
+			}
+		}
+
+		/* remove the bg on end links */
+		li.bpn-prev-link a:hover,
+		li.bpn-next-link a:hover,
+		li.bpn-first-page-link a:hover,
+		li.bpn-last-page-link a:hover {
+			background: none;
+		}
+
+		/* previous link */
+		li.bpn-prev-link {
+
+			a {
+			
+				&:hover,
+				&:focus {}
+			}
+		}
+
+		/* next page link */
+		li.bpn-next-link {
+
+			a {
+				&:hover,
+				&:focus {}
+			}
+		}
+
+		/* first page link */
+		li.bpn-first-page-link {
+			a {
+				&:hover,
+				&:focus {}
+			}
+		}
+
+		/* last page link */
+		li.bpn-last-page-link {
+			a {
+				&:hover,
+				&:focus {}
+			}
+		}
+
+	} /* end .bones_page_navi */
+
+	/* fallback previous & next links */
+	.wp-prev-next {
+
+		ul {}
+
+		.prev-link {
+			float: left;
+		}
+
+		.next-link {
+			float: right;
+		}
+
+	} /* end .wp-prev-next */
+
+/******************************************************************
+10. COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments {
+font-family: CursiveStandard, cursive;
+font-size: 1.725em;
+text-transform: lowercase;
+text-align: center;
+line-height: 0.882em;
+margin-top: 0.882em;
+margin-bottom: 0.441em;
+	/* number of comments span */
+	span {}
+
+}
+
+
+#comment-box{
+.commentlist {
+	li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0.7335em 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		} /* end .commentlist li ul.children */
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-right: -10px;
+		margin-left: -10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	/* general comment classes */
+	.alt {}
+	.odd {
+		background: #eee;
+	}
+	.even {
+		background: #fefefe;
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	/* vcard */
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: #fff;
+		}
+
+	} /* end .commentlist .vcard */
+
+
+	/* comment meta */
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+	
+		a {}
+
+	}
+
+	/* comment content */
+	.comment_content {
+		margin-left: 50px;
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} /* end .commentlist .comment_content */
+
+	/* comment reply link */
+	.comment-reply-link {
+		text-decoration: none;
+		float: right;
+		background: #4598bb;
+		padding: 3px 5px;
+		color: #fff;
+		opacity: 0.65;
+		margin-bottom: 10px;
+		font-weight: 400;
+		font-size: 0.5em;
+
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+
+	} /* end .commentlist .comment-reply-link */
+
+} /* end .commentlist */
+}
+/******************************************************************
+11. COMMENT FORM STYLES
+******************************************************************/
+
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 0.7335em;
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			
+
+			&:focus {
+				background: #fff;
+			}
+
+			/* form validation */
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+				    -ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+				width: 100%;
+				height: 3.125em;
+				background-color: #ddd;
+				background-color: rgba( 0, 0, 0, .05 );
+				border: 1px solid transparent;
+				display: block;
+				padding: 0 0.625em;
+		}
+
+		textarea {
+			border: 1px solid #999;
+			clear: both;
+			height: 5em;
+			width: 100%;
+			outline: none;
+			resize:none;
+			-khtml-opacity: .5;
+			-moz-opacity: .5;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			filter: alpha(opacity=50);
+			opacity: .5;
+		}
+
+	}
+}
+
+	/* comment submit button */
+	#submit {
+	background: #444;
+	width: 100%;
+	height: 50px;	
+	font-family: CursiveStandard, cursive;
+	font-size: 1.4em;
+	color: #fff;
+
+	}
+
+	/* comment form title */
+	#comment-form-title {
+		text-align: center;
+		font-family: CursiveStandard, cursive;
+		color: #666;
+	}
+
+	/* cancel comment reply link */
+	#cancel-comment-reply {
+		a {}
+	}
+
+	/* logged in comments */
+	.comments-logged-in-as {}
+
+	/* allowed tags */
+	#allowed_tags {
+		margin: 1.5em 10px 0.7335em 0;
+	}
+
+	/* no comments */
+	.nocomments {
+		margin: 0 20px 1.1em;
+	}
+
+/*********************
+12. SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+	.widgettitle {}
+
+	.widget {
+
+		ul {
+
+			li {
+
+				&:first-child {}
+
+				&:last-child {}
+
+				a {}
+
+				/* deep nesting */
+				ul {}
+
+			}
+
+		}
+
+	}
+
+/*********************
+13. FOOTER STYLES
+*********************/
+
+.footer {
+width: 100%;
+color: #999;
+background: url("@{imagePath}/bg-footer.gif") repeat 0 0;
+position: relative;
+padding: 0em 0 1em 0;
+
+	#inner-footer {
+		h6{
+			color: #999;
+			font-family: CursiveStandard, cursive;
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 0.541em;
+			padding-bottom: 0.8em;
+			
+		}
+		.footer-box{
+			display: block;
+			width: 90&;
+		}
+		.footer-comments-list{
+				float: left;
+					.footer-comment-in-list{
+					margin-top: 10px;
+					height: 2.4em;
+					line-height: 1.2em;
+					max-width: 100%;
+					overflow: hidden;
+					font-size: 0.9em;
+					word-wrap:break-word;
+					a{
+						color: #999;
+						&:hover{
+							color: #e6e6e6;
+						}
+					}
+					img{
+						vertical-align: center;
+						float: left;
+						margin-right: 8px;
+						.border-radius(50%);
+						&:hover{
+								-khtml-opacity: .6;
+							    -moz-opacity: .6;
+							    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+							    filter: alpha(opacity=60);
+							    opacity: .6;
+								-webkit-box-shadow: 0 0 5px rgba(255,255,255,.6), inset 0 0 5px rgba(255,255,255,1);
+								-moz-box-shadow: 0 0 5px rgba(255,255,255,.6), inset 0 0 5px rgba(255,255,255,1);
+								box-shadow: 0 0 5px rgba(255,255,255,.6), inset 0 0 5px rgba(255,255,255,1);
+						}
+					}
+					}
+					
+					
+				
+		}
+
+		.footer-tag-list{
+			float: left;
+				a{
+					background:#C0392B;
+					display: block;
+					float: left;
+					margin-right: 5px;
+					margin-bottom: 5px;
+					border-radius: 2px;
+					color: #fff;
+					padding: 2px 6px;
+					}
+					a:hover{
+						background: #34495E;
+					}
+	
+		}
+		
+		.footer-contact-info{
+				img{
+					display: block;
+					margin:0 auto;
+					text-align: center;
+					.border-radius(50%);
+				}
+				.social-contact{
+					float: left;
+					margin-left: 1em;
+				}
+
+		}
+	}
+	nav {
+		ul.nav {
+			li {
+				a {}
+
+				&:first-child {}
+
+				&:last-child {}
+			}
+		}
+	}
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+.copyright{
+	clear: both;
+	color: #999;
+	font-family: 'Advent Pro', sans-serif,Microsoft YaHei,Tahoma,Arial;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.9em;
+	a{
+	font-weight: 400;
+	color: #999;
+	text-decoration: none;
+	&:hover{
+		color: #C0392B;
+	}
+	}
+}
+
+
+.archive-page-banner{
+max-width: 100%;
+display: block;
+text-align: center;
+background: #fff;
+	.article-title{
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: rgba(0, 0, 0, 0.5);
+	}
+
+}
+
+
+// 返回顶部按钮样式
+#to-top{
+width: 48px;
+height: 48px;
+text-align: left;
+text-indent: -9999px;
+background:  transparent url('@{imagePath}/sprites.png') -171px -1px no-repeat;
+overflow: hidden;
+position: fixed;
+right: 20px;
+bottom: 20px;
+-khtml-opacity: .5;
+-moz-opacity: .5;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+filter: alpha(opacity=50);
+opacity: .5;
+&:hover{
+	-khtml-opacity: .2;
+	-moz-opacity: .2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+	opacity: .2;
+}
+}
+
+/**** 首页 Transitions ****/
+
+.masonry,
+.masonry .masonry-brick {
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+	-ms-transition-duration: 0.7s;
+	-o-transition-duration: 0.7s;
+	transition-duration: 0.7s;
+}
+
+.masonry {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+	-webkit-transition-property: left, right, top;
+	-moz-transition-property: left, right, top;
+	-ms-transition-property: left, right, top;
+	-o-transition-property: left, right, top;
+	transition-property: left, right, top;
+}
