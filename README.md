@@ -22,14 +22,20 @@ bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 
 采用最流行的前端模板 html5 Boilerplate，响应式布局，CSS用LESS写的（另支持SASS），图标使用的是一淘UX团队的icon-font，内置 jquery, mansory, normailze.css等
 
-- 瀑布流+readability:
+- 瀑布流+readability。
 
-- 响应式：针对481px以下（大部分手机设备）的响应式设计，读者在手机等小屏幕终端上也有不错的阅读体验（不用你再两只手放大，拖啊拖了）
+- 响应式：针对481px以下（大部分手机设备）的响应式设计，读者在手机等小屏幕终端上也有不错的阅读体验。
 
-- 自动访客统计：内置博文访问统计功能（目前发现是与post-views插件有冲突)，若使用本主题，请先停止使用post-views插件。
+- 自动访客统计：内置阅读统计功能（目前发现是与post-views插件有冲突)，若使用本主题，请先停止使用post-views插件，否则会出现错误。
 
 - 无插件分页导航：加强了页面导航。
 
 - 后台设置meta keywords和description（不用自己硬改源代码了）
 
-- 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分（还需优化）,其他大家可以自己看function文件。
+- 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分，评级为A，（还需优化）,其他大家可以自己看function文件。
+
+####即将加入的功能
+
+- js文件实现CDN加速（又拍云 or SAE）
+
+- 后台设置添加统计代码（百度统计等）
