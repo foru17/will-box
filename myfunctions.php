@@ -2,7 +2,7 @@
 $option = get_option('meta_setting_description','meta_setting_keywords','instagram_setting_userid','instagram_setting_accessToken');//获取选项   
 if( $option == '' ){   
     //设置默认数据   
-    $option = '默认数据';  
+    $option = '默认数据(请到后台及时修改)';  
     ///meta参数 
     update_option('meta_setting_description', $option);//更新选项  
     update_option('meta_setting_keywords', $option);//更新选项
@@ -34,7 +34,7 @@ if(isset($_POST['instagram_save'])){
 ?>
 <?php
 function theme_function(){   
-    add_menu_page( 'S3主题设置', 'S3主题设置', 'edit_themes', 'stone_theme','display_function','',99);   
+    add_menu_page( 'Box主题设置', 'Box主题设置', 'edit_themes', 'stone_theme','display_function','',99);   
 }   
   
 function display_function(){   
