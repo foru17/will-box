@@ -3,6 +3,12 @@
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+<!-- 
+主题版权: http://luolei.org/2013/05/will-box-one-theme/
+作者 will Luo  （ http://luolei.org )
+新浪微博@罗罗磊磊 http://weibo.co/foru17  
+twitter @foru17 https://twitter.com/foru17
+ -->
 <head>
 <meta charset="utf-8">
 <!-- Google Chrome Frame for IE -->
