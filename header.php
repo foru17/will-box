@@ -108,11 +108,8 @@ twitter @foru17 https://twitter.com/foru17
 <!-- wordpress head functions -->
 <?php wp_head(); ?>
 <!-- end of wordpress head -->
-<!-- 百度统计代码 -->
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd60bcc77299990ec2461de1b0c126319' type='text/javascript'%3E%3C/script%3E"));
-</script>
+
+
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">		
