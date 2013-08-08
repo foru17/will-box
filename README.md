@@ -6,8 +6,8 @@ will-box 愿望盒子
 - Author: @罗罗磊磊
 - Author URI: http://luolei.org
 - E-mail:i@luolei.org
-- Version: 1.0
-
+- Version: 1.01
+- Update:2013-8-8
 =========
 
 bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
