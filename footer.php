@@ -53,10 +53,12 @@ $i++;
 $(".flexnav").flexNav();
 </script>
 
-<!-- 百度统计代码 -->
+<!-- 百度统计代码 默认隐藏-->
+<span class="analysis">
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd60bcc77299990ec2461de1b0c126319' type='text/javascript'%3E%3C/script%3E"));
 </script>
+</span>
 </body>
 </html> <!-- end page. what a ride! -->

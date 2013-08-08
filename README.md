@@ -7,6 +7,7 @@ will-box 愿望盒子
 - Author URI: http://luolei.org
 - E-mail:i@luolei.org
 - Version: 1.0
+- Update: 2013-8-8
 
 =========
 
