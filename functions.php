@@ -270,6 +270,11 @@ function par_pagenavi($range = 9){
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
 
+//定制后台登录logo
+function login_css(){
+	wp_enqueue_style('login_css',get_template_directory_uri().'/css/login.css');
+}
+add_action('login_head','login_css');
 
 //载入后台定制文件（必须）
 include_once('myfunctions.php')
