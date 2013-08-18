@@ -70,7 +70,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   /* 2 */
-
+  /*自定义鼠标样式*/
+  cursor:url('../images/cursor.png'),auto;
 }
 /*
  * Addresses `font-family` inconsistency between `textarea` and other form
@@ -97,6 +98,7 @@ body {
  */
 a:focus {
   outline: thin dotted;
+  cursor:url('../images/dog.png'),auto;
 }
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
@@ -108,6 +110,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  cursor:url('../images/dog.png'),auto;
 }
 /* ==========================================================================
    Typography
