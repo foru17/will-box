@@ -1,43 +1,19 @@
 <?php get_header(); ?>
+<div id="content" class="home-posts-list">
+<div id="inner-content" class="wrap clearfix">
 
-			<div id="content">
+<div id="not-found-page-container">
+<h1>一个叫404的小鸟~ ~ 来错了地方</h1>
+<form method="get" class="form-wrapper cf" action="<?php bloginfo('home'); ?>/">
+       <input type="text" placeholder="再搜一下呗" required value="<?php echo esc_html($s); ?>" name="s" id="s" />
+       <button type="submit">Search</button>
+</form>
 
-				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+</div><!-- not-found-page-container -->
+</div> <!-- end #inner-content -->
 
-						<article id="post-not-found" class="hentry clearfix">
+</div> <!-- end #content -->
+<div class="clearfix"></div>
 
-							<header class="article-header">
 
-								<h1><?php _e("Epic 404 - Article Not Found", "bonestheme"); ?></h1>
-
-							</header> <!-- end article header -->
-
-							<section class="entry-content">
-
-								<p><?php _e("The article you were looking for was not found, but maybe try looking again!", "bonestheme"); ?></p>
-
-							</section> <!-- end article section -->
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section> <!-- end search section -->
-
-							<footer class="article-footer">
-
-									<p><?php _e("This is the 404.php template.", "bonestheme"); ?></p>
-
-							</footer> <!-- end article footer -->
-
-						</article> <!-- end article -->
-
-					</div> <!-- end #main -->
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
-
-<?php get_footer(); ?>

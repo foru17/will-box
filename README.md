@@ -8,13 +8,9 @@ will-box 愿望盒子
 - E-mail:i@luolei.org
 <<<<<<< HEAD
 - Version: 1.0
-- Update: 2013-8-8
+- Update: 2013-8-24
 
 =======
-- Version: 1.01
-- Update:2013-8-8
->>>>>>> e763bef0613af80c1736f19bee8b1a9181854477
-=========
 
 bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 
@@ -32,13 +28,13 @@ bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 
 - 响应式：针对481px以下（大部分手机设备）的响应式设计，读者在手机等小屏幕终端上也有不错的阅读体验。
 
-- 自动访客统计：内置阅读统计功能（目前发现是与post-views插件有冲突)，若使用本主题，请先停止使用post-views插件，否则会出现错误。
+- 自带访客统计：内置阅读统计功能（目前发现是与post-views插件有冲突)，若使用本主题，请先停止使用post-views插件，否则会出现错误。
 
 - 无插件分页导航：加强了页面导航。
 
 - 后台设置meta keywords和description（不用自己硬改源代码了）
 
-- 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分，评级为A，（还需优化）,其他大家可以自己看function文件。
+- 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分，评级为A，其他大家可以自己看function文件。
 
 ####即将加入的功能
 

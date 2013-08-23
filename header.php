@@ -108,8 +108,6 @@ twitter @foru17 https://twitter.com/foru17
 <!-- wordpress head functions -->
 <?php wp_head(); ?>
 <!-- end of wordpress head -->
-
-
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">		
