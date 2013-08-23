@@ -2,15 +2,16 @@ will-box 愿望盒子
 ========
 - Theme Name: Will-Box-One 愿望盒子
 - Theme URI: http://this.is26.com
-- Description: 罗磊的独立博客定制主题 基于bones,html5,normailize,LESS等相关关键字模板or技术
-- Author: @罗罗磊磊
+- Description: wordpress响应式主题，基于bones,html5,normailize,LESS等相关关键字模板or技术
+- Author: 新浪微博: [@罗罗磊磊](http://weibo.com/foru17)  twitter: [@foru17](https://twitter.com/foru17)
 - Author URI: http://luolei.org
 - E-mail:i@luolei.org
-<<<<<<< HEAD
-- Version: 1.0
+- Version: 1.01
 - Update: 2013-8-24
 
 =======
+####更新
+- 8.24更新1.01 : 修正404页面，modernizr.js 和 jquery.js 使用又拍云CDN加速
 
 bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 
@@ -37,7 +38,5 @@ bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
 - 性能优化:删除了head一堆无用的请求，优化了加载速度，Yslow评分82分，评级为A，其他大家可以自己看function文件。
 
 ####即将加入的功能
-
-- js文件实现CDN加速（又拍云 or SAE）
 
 - 后台设置添加统计代码（百度统计等）

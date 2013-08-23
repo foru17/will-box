@@ -122,8 +122,8 @@ function bones_scripts_and_styles() {
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
   if (!is_admin()) {
 
-    // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+    // modernizr 使用又拍云js CDN加速
+    wp_register_script( 'bones-modernizr',  'http://upcdn.b0.upaiyun.com/libs/modernizr/modernizr-2.5.3.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -136,7 +136,7 @@ function bones_scripts_and_styles() {
       wp_enqueue_script( 'comment-reply' );
     }
 
-    //adding scripts file in the footer
+    //在底部添加自定义script
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
@@ -152,7 +152,7 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
     wp_enqueue_script( 'bones-js' );
-    wp_enqueue_script( 'theme-jquery',get_stylesheet_directory_uri().'/library/js/jquery.js', array('jquery') );
+    wp_enqueue_script( 'theme-jquery','http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.0.min.js', array('jquery') );
     wp_enqueue_script( 'masonry',get_stylesheet_directory_uri().'/library/js/jquery.masonry.min.js' );
     
 
