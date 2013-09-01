@@ -43,19 +43,12 @@ jQuery(document).ready(function($) {
     /* if is below 481px */
     if (responsive_viewport < 481) {
     //导航栏自动隐藏
-    $(window).scroll(
-        {
-            previousTop: 0
-        }, 
-        function () {
-        var currentTop = $(window).scrollTop();
-        if (currentTop < this.previousTop+50) {
-            $(".top-bar").show("3000");
-        } else {
-            $(".top-bar").hide("3000");
-        }
-        this.previousTop = currentTop;
-    });
+    $(window).scroll(function(){
+      if($(window).scrollTop()>$(window).height()) $(".top-bar").fadeOut(500);
+      else $(".top-bar").fadeIn(500);
+    })
+
+
     } /* end smallest screen */
     
     /* if is larger than 481px */
