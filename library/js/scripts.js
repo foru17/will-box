@@ -42,7 +42,20 @@ jQuery(document).ready(function($) {
     
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    
+    //导航栏自动隐藏
+    $(window).scroll(
+        {
+            previousTop: 0
+        }, 
+        function () {
+        var currentTop = $(window).scrollTop();
+        if (currentTop < this.previousTop+50) {
+            $(".top-bar").show("3000");
+        } else {
+            $(".top-bar").hide("3000");
+        }
+        this.previousTop = currentTop;
+    });
     } /* end smallest screen */
     
     /* if is larger than 481px */
@@ -153,11 +166,6 @@ $(function() {
 
 /*
     FlexNav.js 0.7
-
-    Copyright 2013, Jason Weaver http://jasonweaver.name
-    Released under the WTFPL license
-    http://sam.zoy.org/wtfpl/
-
 //
 */
 
