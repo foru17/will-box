@@ -66,8 +66,8 @@ audio:not([controls]) {
 html {
   font-size: 100%;
   /* 1 */
-  -/*自定义鼠标样式*/
- -cursor:url('../images/cursor.png'),auto;
+/*自定义鼠标样式*/
+cursor:url('../images/cursor.png'),auto;
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
