@@ -259,7 +259,7 @@ function par_pagenavi($range = 9){
   unset($contactmethods['jabber']);
   //新增选项
   $contactmethods['rss_url'] = 'RSS URL';
-  $contactmethods['google_plus'] = 'Google Plus信息(建议)';
+  $contactmethods['google_profile'] = 'Google Plus信息(建议)';
   $contactmethods['facebook_url'] = 'Facebook';
   $contactmethods['facebook_url'] = 'Facebook';
   $contactmethods['linkedin_url'] = 'Linkedin';

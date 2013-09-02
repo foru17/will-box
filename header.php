@@ -4,7 +4,7 @@
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 <!-- 
-主题版权: http://luolei.org/2013/05/will-box-one-theme/
+主题地址: http://luolei.org/2013/05/will-box-one-theme/
 作者 will Luo  （ http://luolei.org )
 新浪微博@罗罗磊磊 http://weibo.co/foru17  
 twitter @foru17 https://twitter.com/foru17
@@ -98,6 +98,8 @@ twitter @foru17 https://twitter.com/foru17
 <!-- 图标icons & favicons (参考: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+<!-- Google plus连接添加，谷歌搜索显示博主头像 -->
+<link rel="author" href="https://plus.google.com/105790146178074084423/">
 <!--[if IE]>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <![endif]-->

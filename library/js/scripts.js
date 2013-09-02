@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
     
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    //导航栏自动隐藏
+    //顶部导航栏在小屏幕自动隐藏
     $(window).scroll(function(){
       if($(window).scrollTop()>$(window).height()) $(".top-bar").fadeOut(500);
       else $(".top-bar").fadeIn(500);

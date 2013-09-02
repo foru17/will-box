@@ -88,8 +88,6 @@ textarea {
  */
 body {
   margin: 0;
-/*自定义鼠标样式*/
-cursor:url('../images/cursor.png'),auto;
 }
 /* ==========================================================================
    Links
@@ -110,7 +108,6 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  cursor:url('../images/dog.png'),auto;
 }
 /* ==========================================================================
    Typography
@@ -748,12 +745,6 @@ Stylesheet: Base Mobile Stylesheet
 /*********************
 01. GENERAL STYLES
 *********************/
-html,
-body {
-  /*自定义鼠标样式*/
-
-  cursor: url('../images/cursor.png'), auto;
-}
 body {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
@@ -888,7 +879,7 @@ Wordpress Index Page Styles
 }
 #container {
   max-width: 64em;
-  margin: 80px auto;
+  margin: 60px auto;
   margin-bottom: -40px;
 }
 .fixed {
