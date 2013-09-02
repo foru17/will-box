@@ -1357,10 +1357,18 @@ and more scalable.
   height: auto;
 }
 .entry-content pre {
-  background: #eee;
-  border: 1px solid #cecece;
+  background: #f2f2f0;
+  border-radius: 5px;
   padding: 10px;
+  font-size: 0.9em;
+  font-family: 'Courier New', monospace, monospace;
+  line-height: 1.6;
+  overflow: auto;
+  padding: 1em;
+  .boxShadow(0,1px,5px,0);
+
 }
+
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
