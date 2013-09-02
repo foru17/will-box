@@ -1357,10 +1357,12 @@ and more scalable.
   height: auto;
 }
 .entry-content pre {
+  border-left: 3px solid #E74C3C;
   background: #f2f2f0;
   border-radius: 5px;
   padding: 10px;
   font-size: 0.9em;
+  color:#2C3E50;
   font-family: 'Courier New', monospace, monospace;
   line-height: 1.6;
   overflow: auto;
