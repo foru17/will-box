@@ -66,8 +66,6 @@ audio:not([controls]) {
 html {
   font-size: 100%;
   /* 1 */
-/*自定义鼠标样式*/
-cursor:url('../images/cursor.png'),auto;
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -110,7 +108,6 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  cursor:url('../images/dog.png'),auto;
 }
 /* ==========================================================================
    Typography
@@ -1356,21 +1353,31 @@ and more scalable.
   max-width: 100%;
   height: auto;
 }
+.entry-content code {
+  background: #F2F2F0;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #423B36;
+  font-family: 'Courier New', monospace, monospace;
+  font-size: 0.9em;
+  margin: 3px;
+}
 .entry-content pre {
   border-left: 3px solid #E74C3C;
   background: #f2f2f0;
   border-radius: 5px;
   padding: 10px;
-  font-size: 0.9em;
-  color:#2C3E50;
+  color: #2C3E50;
   font-family: 'Courier New', monospace, monospace;
   line-height: 1.6;
   overflow: auto;
   padding: 1em;
-  .boxShadow(0,1px,5px,0);
-
 }
-
+.entry-content pre code {
+  margin: 0;
+  background: #f2f2f0;
+  color: #2C3E50;
+}
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
