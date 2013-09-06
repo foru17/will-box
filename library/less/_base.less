@@ -14,7 +14,7 @@ html, body {
 
 }
 body {
-	font-family: @serif;
+	font-family: @user-font;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
@@ -93,9 +93,10 @@ Wordpress Index Page Styles
 					.h2{
 						margin: 0 0 12px;
 						font-size: 1.143em;
+						font-family: @user-font;
 						a{
 							color: #0a0a0a;
-							font-weight: 500;
+							font-weight: 600;
 							line-height: 1.3em;
 							&:hover{
 								color: #7F8C8D;
@@ -108,26 +109,30 @@ Wordpress Index Page Styles
 				border-top: 1px solid #eee;
 				.icon-font{
 					opacity: 0.5;
-					font-size: 0.5em;
+					font-size: 0.9em;
 					padding-right: 0.3em;
+					&:hover{
+						opacity: 1.0;
+					}
 				}
 				.home-box-cat-tag{
+					font-family: @user-font;
 					margin-top: -0.8em;
 					.post-categories{
-					a{
-					background: #e74c3c;
-					display: block;
-					float: left;
-					margin-right: 5px;
-					margin-bottom: 5px;
-					border-radius: 2px;
-					color: #fff;
-					font-size: 0.715em;
-					padding: 2px 6px;
-					}
-					a:hover{
-						background: #2C3E50;
-					}
+						a{
+						background: #e74c3c;
+						display: block;
+						float: left;
+						margin-right: 5px;
+						margin-bottom: 5px;
+						border-radius: 2px;
+						color: #fff;
+						font-size: 0.715em;
+						padding: 2px 6px;
+							&:hover{
+								background: #2C3E50;
+							}
+						}
 					}
 				}
 			}
@@ -209,9 +214,11 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
 	text-rendering: optimizelegibility;
 	font-weight: 400;
+	&:hover{
+	
+	}
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -239,13 +246,18 @@ h3, .h3 {
 
 h4, .h4 {
 	font-size: 1.1em;
-	font-weight: 700;
+	font-weight: 900;
 }
 
 h5, .h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+h6, .h6{
+	font-size: 1.1em;
+	font-weight: 700;
 	letter-spacing: 2px;
 }
 
@@ -278,7 +290,9 @@ li{
 				float: right;
 				padding: 0;
 				margin: 0;
-				.current-cat {  }
+				.current-cat { 
+					
+				 }
 				li{
 					float: left;
 					margin-left: 10px;
@@ -286,10 +300,12 @@ li{
 					position: relative;
 
 					a{
-						display: block;
-						color: #666;
+						
+						color: #313131;
 						margin: 0px 5px;
 						font-size: 1em;
+						font-weight: bold;
+						font-family: @user-font;
 
 					}
 					ul{
@@ -518,6 +534,11 @@ and more scalable.
 			clear: both;
 			.single-title{
 				font-size: 1.4em;
+				font-weight: 900;
+				line-height: 2.0 em;
+				&:hover{
+					opacity: 0.6;
+				}
 			}
 			.artile-meta{
 				text-align: center;
@@ -544,9 +565,9 @@ and more scalable.
 			font-size: 1.2em;
 			overflow: hidden;
 			p{
-				line-height: 1.55em;
-				margin: 1em 0;
-				font-family: georgia, times, serif;
+				line-height: 1.35em;
+				margin: 0.8em 0;
+				font-family: @user-font;
 			}
 
 		}
@@ -693,11 +714,10 @@ and more scalable.
 		}
 
 		/* entry content */
-		.entry-content {
-					
-					font-family: georgia, times, serif;
+		.entry-content {		
+				font-family: @user-font;	
 			p {
-
+			
 			}
 
 
@@ -745,7 +765,7 @@ and more scalable.
 			}
 
 			img {
-				margin: 0 0 1.5em 0;
+				margin: 0 0 0.5em 0;
 				max-width: 100%;
 				height: auto;
 			}
@@ -771,7 +791,7 @@ and more scalable.
 				color:#423B36;
 				font-family: 'Courier New', monospace, monospace;
 				font-size: 0.9em;
-				margin: 3px;
+				margin: 0 3px;
 			}
 			pre {
 					border-left: 3px solid #E74C3C;
@@ -785,6 +805,7 @@ and more scalable.
 					padding: 1em;
 					code{
 					margin: 0;
+					padding: 0;
 					background: #f2f2f0;
 					color: #2C3E50;
 					}
