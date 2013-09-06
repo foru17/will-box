@@ -110,6 +110,24 @@ twitter @foru17 https://twitter.com/foru17
 <!-- wordpress head functions -->
 <?php wp_head(); ?>
 <!-- end of wordpress head -->
+<script>
+	$(function() {
+    $('.home-posts-list').masonry({
+        itemSelector: '.post-in-list',
+        columnWidth: function(containerWidth) {
+            return containerWidth / ($(window).width() > 640 ? 3 : 2);
+        }
+    });
+    // 加载后自动reload瀑布流（仿佛布局混乱
+    $(window).load(function(){
+        $('.home-posts-list').masonry('reload');
+    });
+    // 改变窗口后reload瀑布流
+    $(window).resize(function() {
+        $('.home-posts-list').masonry('reload');
+    });
+});
+</script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">		
