@@ -815,17 +815,18 @@ Wordpress Index Page Styles
   padding: 20px;
 }
 .home-posts-list #main .post-in-list .blog-entry-text .entry-header .h2 {
-  margin: 0 0 12px;
+  margin: 0 0 0.4em;
   font-size: 1.143em;
   font-family: "Oxygen", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", Arial, SimSun, sans-serif;
 }
 .home-posts-list #main .post-in-list .blog-entry-text .entry-header .h2 a {
-  color: #0a0a0a;
+  color: #474646;
   font-weight: 600;
   line-height: 1.3em;
 }
 .home-posts-list #main .post-in-list .blog-entry-text .entry-header .h2 a:hover {
   color: #7F8C8D;
+  opacity: 0.6;
 }
 .home-posts-list #main .post-in-list .blog-entry-text .entry-meta {
   border-top: 1px solid #eee;
@@ -1027,7 +1028,7 @@ li {
   color: #313131;
   margin: 0px 5px;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Oxygen", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", Arial, SimSun, sans-serif;
 }
 .header .top-bar .top-inner #nav li ul {
@@ -1213,13 +1214,12 @@ and more scalable.
 #content #single-inner-content #main {
   width: 80%;
   margin: 0 auto;
-  border-bottom: 1px solid #eee;
   line-height: 1.55em;
   font-size: 1.2em;
   overflow: hidden;
 }
 #content #single-inner-content #main p {
-  line-height: 1.35em;
+  line-height: 1.45em;
   margin: 0.8em 0;
   font-family: "Oxygen", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", Arial, SimSun, sans-serif;
 }

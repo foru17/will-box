@@ -134,22 +134,7 @@ $(function() {
 });
 
 // 瀑布流Mansoy样式
-$(function() {
-    $('.home-posts-list').masonry({
-        itemSelector: '.post-in-list',
-        columnWidth: function(containerWidth) {
-            return containerWidth / ($(window).width() > 640 ? 3 : 2);
-        }
-    });
-    // 加载后自动reload瀑布流（仿佛布局混乱
-    $(window).load(function(){
-        $('.home-posts-list').masonry('reload');
-    });
-    // 改变窗口后reload瀑布流
-    $(window).resize(function() {
-        $('.home-posts-list').masonry('reload');
-    });
-});
+
 
 //评论栏背景文字
 
