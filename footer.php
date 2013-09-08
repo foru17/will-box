@@ -9,7 +9,7 @@
 $show_comments = 5; //评论数量
 $my_email = get_bloginfo ('admin_email'); //获取博主自己的email
 $i = 1;
-$comments = get_comments('number=200&status=approve&type=comment'); //取得前200个评论，如果你每天的回复量超过200可以适量加大
+$comments = get_comments('number=200&status=approve&type=comment&user_id=>0'); //取得前200个评论，如果你每天的回复量超过200可以适量加大，其中的 「user_id>=0」为不显示博主自己的评论
 foreach ($comments as $rc_comment) {
 if ($rc_comment->comment_author_email != $my_email) {
 ?>
