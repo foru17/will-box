@@ -7,10 +7,13 @@ will-box 愿望盒子
 - Author URI: http://luolei.org
 - E-mail:i@luolei.org
 - Version: 1.01
-- Update: 2013-8-24
+- Update: 2013-9-07
 
 =======
 ####更新
+
+- 9.07更新 ：优化字体和细节，增加代码高亮样式
+
 - 8.24更新1.01 : 修正404页面，modernizr.js 和 jquery.js 使用又拍云CDN加速
 
 bug反馈和咨询，请访问<http://luolei.org/2013/05/will-box-one-theme/>
