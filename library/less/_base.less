@@ -68,7 +68,7 @@ body {
 
 
 /*********************
-Wordpress Index Page Styles
+首页样式
 *********************/
 
 .home-posts-list{
@@ -566,6 +566,7 @@ and more scalable.
 			line-height: 1.65em;
 			font-size: 1.2em;
 			overflow: hidden;
+			
 			p{
 				line-height: 1.45em;
 				margin: 0.8em 0;
@@ -717,7 +718,10 @@ and more scalable.
 
 		/* entry content */
 		.entry-content {		
-				font-family: @user-font;	
+				font-family: @user-font;
+			a[href^="http"]:not([href^="http://luolei.org"]):not([href^="http://www.domain.com"]):not([href^="https://domain.com"]):not([href^="https://www.domain.com"]){
+				color: #47B9ED;
+			}	
 			p {
 			
 			}

@@ -796,7 +796,7 @@ body .analysis {
 /* paged items like search results or archives */
 /* individual paged (i.e. body.paged-3) */
 /*********************
-Wordpress Index Page Styles
+首页样式
 *********************/
 .home-posts-list #main .post-in-list {
   margin: 10px;
@@ -1344,6 +1344,9 @@ and more scalable.
 			but it's up to you. Feel free to change it up.
 			*/
 
+}
+.entry-content a[href^="http"]:not([href^="http://luolei.org"]):not([href^="http://www.domain.com"]):not([href^="https://domain.com"]):not([href^="https://www.domain.com"]) {
+  color: #47B9ED;
 }
 .entry-content blockquote {
   margin: 1em 0;
