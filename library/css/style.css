@@ -1762,11 +1762,11 @@ and more scalable.
 .footer #inner-footer .footer-comments-list .footer-comment-in-list a {
   color: #999;
 }
+.footer #inner-footer .footer-comments-list .footer-comment-in-list a img {
+  display: none;
+}
 .footer #inner-footer .footer-comments-list .footer-comment-in-list a:hover {
   color: #e6e6e6;
-}
-.footer #inner-footer .footer-comments-list .footer-comment-in-list img {
-  display: none;
 }
 .footer #inner-footer .footer-comments-list .footer-comment-in-list .avatar {
   vertical-align: center;
