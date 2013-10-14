@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 <!-- 
 主题地址: http://luolei.org/2013/05/will-box-one-theme/
-作者 will Luo  （ http://luolei.org )
+作者 @foru17  （ http://luolei.org )
 新浪微博@罗罗磊磊 http://weibo.co/foru17  
 twitter @foru17 https://twitter.com/foru17
  -->

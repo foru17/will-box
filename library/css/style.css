@@ -1765,7 +1765,7 @@ and more scalable.
 .footer #inner-footer .footer-comments-list .footer-comment-in-list a:hover {
   color: #e6e6e6;
 }
-.footer #inner-footer .footer-comments-list .footer-comment-in-list img {
+.footer #inner-footer .footer-comments-list .footer-comment-in-list .avatar {
   vertical-align: center;
   float: left;
   margin-right: 8px;
@@ -1773,7 +1773,7 @@ and more scalable.
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.footer #inner-footer .footer-comments-list .footer-comment-in-list img:hover {
+.footer #inner-footer .footer-comments-list .footer-comment-in-list .avatar:hover {
   -khtml-opacity: .6;
   -moz-opacity: .6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
