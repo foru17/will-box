@@ -11,7 +11,16 @@ Stylesheet: Base Mobile Stylesheet
 
 
 html, body {
+	a{
+	-ms-word-break: break-all;
+     word-break: break-all;
 
+     /* Non standard for webkit */
+     word-break: break-word;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+	}
 }
 body {
 	font-family: @serif;
@@ -95,10 +104,11 @@ body {
 						font-size: 1.143em;
 						font-family: @user-font;
 						a{
+							word-brak:break-all;//首页栏目防止url 过长导致 box 宽度撑开
 							color: #474646;
 							font-weight: 600;
 							line-height: 1.3em;
-
+						
 							&:hover{
 								color: #7F8C8D;
 								opacity: 0.6;
@@ -717,8 +727,9 @@ and more scalable.
 		}
 
 		/* entry content */
-		.entry-content {		
-				font-family: @user-font;
+		.entry-content {	
+
+			font-family: @user-font;
 			a[href^="http"]:not([href^="http://luolei.org"]):not([href^="http://www.domain.com"]):not([href^="https://domain.com"]):not([href^="https://www.domain.com"]){
 				color: #47B9ED;
 			}	

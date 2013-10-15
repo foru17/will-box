@@ -745,6 +745,17 @@ Stylesheet: Base Mobile Stylesheet
 /*********************
 01. GENERAL STYLES
 *********************/
+html a,
+body a {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
 body {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
@@ -820,6 +831,7 @@ body .analysis {
   font-family: "Oxygen", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", Arial, SimSun, sans-serif;
 }
 .home-posts-list #main .post-in-list .blog-entry-text .entry-header .h2 a {
+  word-brak: break-all;
   color: #474646;
   font-weight: 600;
   line-height: 1.3em;
