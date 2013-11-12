@@ -32,8 +32,10 @@ $i++;
 <?php wp_tag_cloud('number=20&order=RAND&smallest=12&largest=12'); ?>
 </div>
 
-<div class="footer-box footer-contact-info">
-
+<div class="footer-box footer-power-info">
+<h6>本网站使用了</h6>
+<li class="power-on"><a href="http://www.upyun.com/?md=luolei"><img src="<?php echo get_template_directory_uri(); ?>/images/upyunLogo.png" alt=""></a></li>
+<li class="power-on"><a href="https://www.linode.com/?r=bc281a496205a4bb946c7e7d0a9a44116bebdf32"><img class="linode" src="<?php echo get_template_directory_uri(); ?>/images/Linode-logo.png" alt=""></a></li>
 
 </div>
 
