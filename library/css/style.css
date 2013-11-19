@@ -1814,6 +1814,9 @@ and more scalable.
 .footer #inner-footer .footer-tag-list a:hover {
   background: #34495E;
 }
+.footer #inner-footer .footer-contact-info {
+  float: left;
+}
 .footer #inner-footer .footer-contact-info img {
   display: block;
   margin: 0 auto;
