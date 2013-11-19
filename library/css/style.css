@@ -1814,6 +1814,7 @@ and more scalable.
 .footer #inner-footer .footer-tag-list a:hover {
   background: #34495E;
 }
+<<<<<<< HEAD
 .footer #inner-footer .footer-contact-info {
   float: left;
 }
@@ -1828,6 +1829,14 @@ and more scalable.
 .footer #inner-footer .footer-contact-info .social-contact {
   float: left;
   margin-left: 1em;
+=======
+.footer #inner-footer .footer-power-info img {
+  background: white;
+  margin-left: 60px;
+  width: 140px;
+  height: auto;
+  border-radius: 5px;
+>>>>>>> 7b17f92edf01b7fb083182e2c41cdb888e7e5af0
 }
 /*
 	if you checked out the link above:
