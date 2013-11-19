@@ -1814,6 +1814,10 @@ and more scalable.
 .footer #inner-footer .footer-tag-list a:hover {
   background: #34495E;
 }
+.footer #inner-footer .footer-power-info {
+  float: left;
+  width: 100%;
+}
 .footer #inner-footer .footer-power-info img {
   background: white;
   margin-left: 60px;
