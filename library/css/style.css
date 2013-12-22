@@ -1814,16 +1814,36 @@ and more scalable.
 .footer #inner-footer .footer-tag-list a:hover {
   background: #34495E;
 }
+<<<<<<< HEAD
 .footer #inner-footer .footer-power-info {
   float: left;
   width: 100%;
 }
+=======
+<<<<<<< HEAD
+.footer #inner-footer .footer-contact-info {
+  float: left;
+}
+.footer #inner-footer .footer-contact-info img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.footer #inner-footer .footer-contact-info .social-contact {
+  float: left;
+  margin-left: 1em;
+=======
+>>>>>>> 0e1c139feda3a851d8afefbb59eff2a114331519
 .footer #inner-footer .footer-power-info img {
   background: white;
   margin-left: 60px;
   width: 140px;
   height: auto;
   border-radius: 5px;
+>>>>>>> 7b17f92edf01b7fb083182e2c41cdb888e7e5af0
 }
 /*
 	if you checked out the link above:
